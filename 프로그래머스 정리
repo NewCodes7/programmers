@@ -1,0 +1,6 @@
+3/6
+1. 특정 코드 반복하고 싶을 때 코드.repeat(n)
+2. 축적해서 하나의 결괏값 reduce((acc, curr) ⇒ acc + curr, 0)
+3. 대체 replace(대체하고 싶은, 뭘로)
+4. 정규표현식 [https://curryyou.tistory.com/234](https://curryyou.tistory.com/234) RegExp
+5. split(구분자, 최대개수)
