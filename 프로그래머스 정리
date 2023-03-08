@@ -1,7 +1,7 @@
 3/6
 1. 특정 코드 반복하고 싶을 때 코드.repeat(n)
-2. 축적해서 하나의 결괏값 reduce((acc, curr) ⇒ acc + curr, 0)
-3. 문자열 중 대체 replace(대체하고 싶은, 뭘로)
+2. 축적해서 하나의 결괏값 reduce((acc, curr) ⇒ acc + curr, 0) 0 자리는 acc의 초기값
+3. 문자열 중 대체 replace(대체하고 싶은, 뭘로) -- 하나밖에 안 바뀜 모두 바꾸려면 /~~/g 정규식!!
 4. 정규표현식 [https://curryyou.tistory.com/234](https://curryyou.tistory.com/234) RegExp
 5. split(구분자, 최대개수)
 
@@ -10,7 +10,7 @@
 2. Number.isInteger(): 주어진 값이 정수인지 아닌지를 판별하는 메서드입니다.
 3. for (let c of my_string) answer += c === c.toLowerCase() ? c.toUpperCase() : c.toLowerCase(); 문자열에서 저렇게 순회 가능!
 4. sort(): 오름차순 sort((a,b)=> b-a): 내림차순
-5. filter(()=>a): a가 true라면 필터링함(원래 배열에서 특정 집단을 배제하고 싶을 때)
+5. filter(()=>a): a가 true인 녀석만 남김(원래 배열에서 특정 집단만 남기고 싶을 때)
 6. 배열 원하는 위치에 추가: arr.splice(2, 0, 'd') index 2 ('c')의 위치에 요소를 추가
 7. 배열 원하는 위치 삭제: arr.splice(1, 2)  index 1 부터 2개의 요소('b', 'e')를 제거
 8. 배열 교체: arr.splice(1,1,5) index 1 부터 1개의 요소를 삭제하고 숫자5를 추가
@@ -24,3 +24,12 @@
 16. sort()의 원래 용도는 알파벳 정렬!!
 17. 배열 중복 제거: Set 연산자 이용하거나 filter((c, i)=> indexOf(c) === i)이용 indexOf는 가장 가까운 걸 뱉어내니!
 18. 배열이 같은지 비교하고 싶을 때는 뒤에 toString()을 붙이자..아니면 조인!! 그냥 쌩을 비교하면 메모리 주소로 비교하는 듯 (형변환x)
+
+3/8
+1. lastIndexOf: 역순으로 index 탐색
+2. 문자열에서 특정 문자 개수를 세고 싶다면... split(특정문자).length -1 이용하기!!
+3. 연결고리 짓고 싶다면 구조분해할당, 객체(숫자일 때)!
+4. 특정 문자들을 찾아야 하는 상황이라면 정규식 떠올리기!
+5. str.match(정규식) 하면 찾은거 배열로 뱉어 냄
+6. my_string.toLowerCase(): 문자열 전체가 소문자로 됨!
+7. 배열 자르고 싶을 때는 splice 배열 일부분 그냥 가져오고 싶을 때는 slice
