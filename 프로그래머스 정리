@@ -33,3 +33,7 @@
 5. str.match(정규식) 하면 찾은거 배열로 뱉어 냄
 6. my_string.toLowerCase(): 문자열 전체가 소문자로 됨!
 7. 배열 자르고 싶을 때는 splice 배열 일부분 그냥 가져오고 싶을 때는 slice
+
+3/9
+1. 배열 생성 다양하게: https://tesseractjh.tistory.com/103
+2. 
